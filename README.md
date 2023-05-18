@@ -4,9 +4,9 @@
 
  DBProductDAO save data to database.
 
-Only change to code when changing data saving place is to change which dao class to use in code.
+Modify the code only in the Main.java file depending on whether you want to save the data to a database or a CSV file.
 
-Choose which DAO class you want to use and remove other:
+Choose which DAO class you want to use and remove the other:
 
         private static IProductDAO productDAO;
 
@@ -24,8 +24,9 @@ CREATE database productdb;
 #### Create product table:
 CREATE TABLE product (id BIGINT PRIMARY KEY, name TEXT, pieces INT);
 
-####
-Check config.properties.example.txt file and create config.properties file with your own db username and password.
+#### Check config.properties.example.txt file and create config.properties file with your own db username and password.
+
+    db.url=jdbc:mariadb://localhost/productdb
 
     db.username=<username>
 
