@@ -12,10 +12,10 @@ public class Main {
     private static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         // Writes data to csv file
-        //productDAO = new CSVProductDAO();
+        productDAO = new CSVProductDAO();
 
         // Writes data to db
-        productDAO = new DBProductDAO();
+        //productDAO = new DBProductDAO();
 
         String input = "";
         while(!input.equalsIgnoreCase("e")) {
