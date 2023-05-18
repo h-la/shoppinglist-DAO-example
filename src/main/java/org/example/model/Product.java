@@ -5,6 +5,19 @@ public class Product {
     private String name;
     private int pieces;
     public Product() {}
+
+    public void printProduct() {
+        System.out.println(this.getName() + ": " + getPieces() + "kpl.");
+    }
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", pieces=" + pieces +
+                '}';
+    }
+
     public Product(Long id, String name, int pieces) {
         this.id = id;
         this.name = name;
