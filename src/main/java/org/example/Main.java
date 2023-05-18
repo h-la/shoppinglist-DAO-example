@@ -1,15 +1,21 @@
 package org.example;
 
 import org.example.dao.CSVProductDAO;
+import org.example.dao.DBProductDAO;
 import org.example.dao.IProductDAO;
 import org.example.model.Product;
+
 import java.util.Scanner;
 
 public class Main {
     private static IProductDAO productDAO;
     private static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
-        productDAO = new CSVProductDAO();
+        // Writes data to csv file
+        //productDAO = new CSVProductDAO();
+
+        // Writes data to db
+        productDAO = new DBProductDAO();
 
         String input = "";
         while(!input.equalsIgnoreCase("e")) {

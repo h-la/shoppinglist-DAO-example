@@ -13,6 +13,10 @@ import java.util.Scanner;
 public class CSVProductDAO implements IProductDAO {
 
     private static String fileName = "shopping_list.csv";
+
+    public CSVProductDAO() {
+    }
+
     @Override
     public boolean createProduct(Product product) {
         product.setId(new Random().nextLong(100000));
