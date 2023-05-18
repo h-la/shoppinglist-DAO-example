@@ -1,4 +1,5 @@
 src/main/resources/config.properties
+shopping_list.csv
 
 target/
 !.mvn/wrapper/maven-wrapper.jar
